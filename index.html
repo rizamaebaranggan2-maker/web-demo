@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rai's Cafe · Where flavors glow</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style-cafe.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo"><span class="accent">✦</span> Rai's Cafe</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting"> Welcome to</p>
+        <h1 class="hero-title">Rai's <span class="accent">Cafe</span></h1>
+        <p class="hero-subtitle">Where every bite glows with flavor</p>
+        <p class="hero-description">
+          Crafting memorable moments with artisanal coffee, fresh pastries, 
+          and dishes made from the heart.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore menu ✨</a>
+          <a href="#contact" class="btn btn-outline">Reserve a table</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-glow">
+          <img src="/images/cafe.jpg" alt="Rai's Cafe - Cozy atmosphere" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll for flavors</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-label">✦ Our menu</div>
+      <h2 class="section-title">Flavors that <span class="accent">glow</span></h2>
+      
+      <!-- Category Tabs -->
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab-btn active" data-category="all">All</button>
+        <button class="tab-btn" data-category="coffee">Coffee</button>
+        <button class="tab-btn" data-category="pastries">Pastries</button>
+        <button class="tab-btn" data-category="brunch">Brunch</button>
+        <button class="tab-btn" data-category="beverages">Beverages</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Coffee Items -->
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-image">
+            <img src="/images/classic espresso.jpg" alt="Espresso" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Classic Espresso</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>Rich, bold single-origin espresso with crema</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-image">
+            <img src="/images/Caramel Latte.jpg" alt="Latte" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Caramel Latte</h3>
+              <span class="price">$4.50</span>
+            </div>
+            <p>Smooth espresso with steamed milk and house-made caramel</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="menu-image">
+            <img src="/images/Vanilla Cappuccino.jpg" alt="Cappuccino" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Vanilla Cappuccino</h3>
+              <span class="price">$4.25</span>
+            </div>
+            <p>Perfectly balanced with velvety foam and vanilla</p>
+          </div>
+        </div>
+
+        <!-- Pastries -->
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-image">
+            <img src="/images/Chocolate Berry Croissant.jpg" alt="Croissant" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Chocolate Berry Croissant</h3>
+              <span class="price">$4.00</span>
+            </div>
+            <p>Flaky, golden, and impossibly buttery</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-image">
+            <img src="/images/Raspberry Danish.jpg" alt="Danish" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Raspberry Danish</h3>
+              <span class="price">$4.50</span>
+            </div>
+            <p>Buttery pastry with tangy raspberry filling</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="pastries">
+          <div class="menu-image">
+            <img src="/images/Blueberry Muffin.jpg" alt="Muffin" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Blueberry Muffin</h3>
+              <span class="price">$3.75</span>
+            </div>
+            <p>Fresh blueberries with a crumbly streusel topping</p>
+          </div>
+        </div>
+
+        <!-- Brunch -->
+        <div class="menu-item" data-category="brunch">
+          <div class="menu-image">
+            <img src="/images/Avocado Toast.jpg" alt="Avocado Toast" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Avocado Toast</h3>
+              <span class="price">$8.50</span>
+            </div>
+            <p>Sourdough with smashed avocado with tomatoes</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="brunch">
+          <div class="menu-image">
+            <img src="/images/Eggs Benedict.jpg" alt="Eggs Benedict" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Eggs Benedict</h3>
+              <span class="price">$12.00</span>
+            </div>
+            <p>Poached eggs, hollandaise, and ham on English muffin</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="brunch">
+          <div class="menu-image">
+            <img src="/images/Buttermilk Pancakes.jpg" alt="Pancakes" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Buttermilk Pancakes</h3>
+              <span class="price">$9.50</span>
+            </div>
+            <p>Fluffy stack with maple syrup and fresh berries with egg</p>
+          </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-image">
+            <img src="/images/Matcha Latte.jpg" alt="Matcha Latte" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Matcha Latte</h3>
+              <span class="price">$4.75</span>
+            </div>
+            <p>Ceremonial matcha with steamed oat milk</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-image">
+            <img src="/images/Chai Latte.jpg" alt="Chai Latte" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Chai Latte</h3>
+              <span class="price">$4.25</span>
+            </div>
+            <p>Spiced black tea with honey and steamed milk</p>
+          </div>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-image">
+            <img src="/images/Fresh juice.jpg" alt="Fresh Juice" loading="lazy" />
+            <div class="menu-glow"></div>
+          </div>
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Fresh Juice</h3>
+              <span class="price">$5.50</span>
+            </div>
+            <p>Daily selection of cold-pressed seasonal juices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label">✦ Our story</div>
+      <h2 class="section-title">Where every cup <span class="accent">tells a story</span></h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="/images/Cafe Shop.jpg" alt="Lumina Cafe interior" />
+        </div>
+        <div class="about-text">
+          <p>
+            Rai Cafe was born from a simple dream — to create a space where 
+            people could gather, connect, and savor the beauty of good food and 
+            great company.
+          </p>
+          <p>
+            Every recipe is crafted with love, using locally-sourced ingredients 
+            and a touch of magic. From our signature coffee blends to our 
+            flaky pastries, we pour our hearts into every creation.
+          </p>
+          <div class="about-features">
+            <div><i class="fas fa-coffee"></i> <span>Artisanal coffee</span></div>
+            <div><i class="fas fa-leaf"></i> <span>Locally sourced</span></div>
+            <div><i class="fas fa-heart"></i> <span>Made with love</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-label">✦ Get in touch</div>
+      <h2 class="section-title">Come visit <span class="accent">us</span></h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p>📍 Located in the heart of the city, Rai Cafe is your cozy escape.</p>
+          <ul class="contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Glow Street, NYC</li>
+            <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> hello@raicafe.com</li>
+          </ul>
+          <div class="hours">
+            <h4>Hours</h4>
+            <p>Mon - Fri: 7:00 AM - 9:00 PM</p>
+            <p>Sat - Sun: 8:00 AM - 10:00 PM</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Reserve a table ✨</h3>
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Email address" required />
+          <input type="tel" placeholder="Phone number" />
+          <input type="date" required />
+          <select>
+            <option>2 people</option>
+            <option>4 people</option>
+            <option>6 people</option>
+            <option>8+ people</option>
+          </select>
+          <textarea rows="3" placeholder="Special requests..."></textarea>
+          <button type="submit" class="btn btn-primary">Reserve now ✨</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Rai Cafe — made with <i class="fas fa-heart" style="color: #ff6b9d;"></i> and fresh coffee</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/script-cafe.js"></script>
+</body>
+</html>
